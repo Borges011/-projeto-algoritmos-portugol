@@ -22,7 +22,7 @@ programa
 		escreva("3 - Multiplicação\n")
 		escreva("4 - Divisão\n")
 		escreva("Opção: ")
-		leia(opcao)
+		leia(resultado)
 
 		se(opcao == 1)
 		{
