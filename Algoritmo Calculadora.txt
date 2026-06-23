@@ -1,0 +1,59 @@
+Algoritmo Calculadora
+
+
+programa
+{
+	funcao inicio()
+	{
+		real num1, num2, resultado
+		inteiro opcao
+
+		escreva("=== CALCULADORA ===\n")
+
+		escreva("Digite o primeiro número: ")
+		leia(num1)
+
+		escreva("Digite o segundo número: ")
+		leia(num2)
+
+		escreva("\nEscolha a operação:\n")
+		escreva("1 - Soma\n")
+		escreva("2 - Subtração\n")
+		escreva("3 - Multiplicação\n")
+		escreva("4 - Divisão\n")
+		escreva("Opção: ")
+		leia(opcao)
+
+		se(opcao == 1)
+		{
+			resultado = num1 + num2
+			escreva("Resultado: ", resultado)
+		}
+		senao se(opcao == 2)
+		{
+			resultado = num1 - num2
+			escreva("Resultado: ", resultado)
+		}
+		senao se(opcao == 3)
+		{
+			resultado = num1 * num2
+			escreva("Resultado: ", resultado)
+		}
+		senao se(opcao == 4)
+		{
+			se(num2 != 0)
+			{
+				resultado = num1 / num2
+				escreva("Resultado: ", resultado)
+			}
+			senao
+			{
+				escreva("Erro: divisão por zero!")
+			}
+		}
+		senao
+		{
+			escreva("Opção inválida!")
+		}
+	}
+}
